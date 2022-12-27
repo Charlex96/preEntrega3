@@ -1,0 +1,30 @@
+h1{
+    text-align: center;
+}
+.container1{
+    text-align: center;
+}
+.container-title{
+    margin: 20px;
+}
+.botton{
+    margin: 20px auto;
+    border: 1px solid blue;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 130px;
+    padding: 5px;
+    text-align: center;
+}
+.botton:hover{
+    background-color: blue;
+    color: white;
+}
+
+#nombre{
+    margin: 20px;
+}
+
+.error{
+    color: red;
+}
