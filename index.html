@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./estilos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
@@ -23,22 +25,161 @@
 
                 <div class="container-text">
                     <div class="container-title">
-                        <h3>Nombre del solicitante:</h3>
+                        <h3>Datos del solicitante:</h3>
                         <div class="container1-text"></div>
                     </div>
                 </div>
 
-                <input type="text" id="nombre" placeholder="Nombre">
-                <p class="botton btn-nombre">Aceptar</p>
+                <div class="container-input">
+                    <p id="label-input">Tu nombre</p>
+                    <div class="input input-nombre">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                    </div>
+                </div>
+
+
+                <div class="container-datos">
+    
+                    <div class="container-input">
+                        <p>Tu número de cédula</p>
+                        <div class="input input-ci">
+                            <input type="text" id="ci" placeholder="Ej: 1712345678">
+                        </div>
+                    </div>
+    
+                    <div class="container-input">
+    
+                        <p>Tu celular o correo electrónico</p>
+    
+                        <div class="container-bottones">
+                            <div  class="botton-union btn1"> 
+                                <p>Celular</p>
+                            </div>
+                            <div  class="botton-union btn2"> 
+                                <p>Correo</p>
+                            </div>
+                        </div>
+    
+                        <div class="input input-celular-email">
+                            <input type="tel" id="celular-email" placeholder="Ej: 0912345678" >
+                            <ion-icon name="alert-circle" id="#icon"></ion-icon>
+                        </div>
+    
+                    </div>
+
+
+                </div>
+
+                
+
+                <div class="container-btn-continue">
+                    
+                    <button class="botton btn_atras" >Atrás</button>
+
+                    <button class="botton btn_continuar" disabled>Continuar</button>
+                </div>
+
                 <p class="error"></p>
                 <p class="detalles"></p>
                 <div class="pagos"></div>
             </div>
         </article>
 
+
+        <article class="article article-entidades">
+            <h2>Selecciona la entidad financiera para el crédito</h2>
+
+            <div class="container container-entidades">
+
+
+                <div class="box box-entidades">
+                    <h4>Nombre Entidad</h4>
+                    <p>Interes: <span id="interes"></span> %</p>
+                    <p>Plazo Máx: <span id="plazo-max"></span> meses</p>
+                    <p>Monto Máx: $ <span id="monto-max"></span> </p>
+                    <p>Monto Mín: $ <span id="monto-min"></span> </p>
+                </div>
+            </div>
+
+        </article>
+
+<!-- 
+        <article class="container1">
+            <div>
+
+
+                <p id="label-input">Escribe un valor entre mínimo $<span id="valor-min"></span> y máximo $<span id="valor-max"></span></p>
+                <div class="container-input">
+                    <div class="input input-nombre">
+                        <input type="text" id="monto" placeholder="$ 12.000">
+                    </div>
+                </div>
+
+        </article> -->
+
+
+
+        <article class="article article-plazos">
+            <h2>Cuotas de acuerdo a tu necesidad</h2>
+
+            <div class="container container-plazos">
+
+
+                <div class="box box-plazos12">
+                    <h4><span id="meses"></span> 12 meses</h4>
+                    <p>Cuotas: $ <span id="cuotas12"></span></p>
+                    <p>Total: $ <span id="total12"></span></p>
+
+                </div>
+                <div class="box box-plazos24">
+                    <h4><span id="meses"></span> 24 meses</h4>
+                    <p>Cuotas: $ <span id="cuotas24"></span></p>
+                    <p>Total: $ <span id="total24"></span></p>
+
+                </div>
+                <div class="box box-plazos36">
+                    <h4><span id="meses"></span> 36 meses</h4>
+                    <p>Cuotas: $ <span id="cuotas36"></span></p>
+                    <p>Total: $ <span id="total36"></span></p>
+
+                </div>
+                <div class="box box-plazos48">
+                    <h4><span id="meses"></span> 48 meses</h4>
+                    <p>Cuotas: $ <span id="cuotas48"></span></p>
+                    <p>Total: $ <span id="total48"></span></p>
+
+                </div>
+                <div class="box box-plazos60">
+                    <h4><span id="meses"></span> 60 meses</h4>
+                    <p>Cuotas: $ <span id="cuotas60"></span></p>
+                    <p>Total: $ <span id="total60"></span></p>
+
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="container1 article-detalle">
+
+            <h3>Detalles de tu prestamo</h3>
+
+            <p>Cuota: $ <span id="cuota-detalle"></span></p>
+            <hr>
+            <p>Capital: $ <span id="capital-detalle"></span></p>
+            <p>Total de interes: $ <span id="interes-detalle"></span></p>
+            <p>Total a pagar: $ <span id="total-detalle"></span></p>
+
+        </article>
+
+
     </main>
 
     <script src="./archivo.js"></script>
+
+    <!-- IonicIcon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script   script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>

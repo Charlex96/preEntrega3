@@ -1,0 +1,66 @@
+[
+    {
+        "entidad": "Banco Pichincha", 
+        "interes": 9, 
+        "plazosMaximo": 120, 
+        "montoMaximo": 500000, 
+        "montoMinimo": 500,
+        "tipoCredito": [
+            {
+                "creditoInfinite": 500000,
+                "creditoPlatinum": 100000,
+                "creditoGlod": 80000,
+                "creditoClassic": 50000
+            }
+        ]
+    },
+
+    {
+        "entidad": "Produbanco",      
+        "interes": 8, 
+        "plazosMaximo": 96, 
+        "montoMaximo": 300000, 
+        "montoMinimo": 500,
+        "tipoCredito": [
+            {
+                "creditoInfinite": 300000,
+                "creditoPlatinum": 100000,
+                "creditoGlod": 60000,
+                "creditoClassic": 40000
+            }
+        ]
+    },
+
+    {
+        "entidad": "Banco Guayaquil", 
+        "interes": 7, 
+        "plazosMaximo": 72, 
+        "montoMaximo": 100000, 
+        "montoMinimo": 400,
+        "tipoCredito": [
+            {
+                "creditoInfinite": 100000,
+                "creditoPlatinum": 80000,
+                "creditoGlod": 50000,
+                "creditoClassic": 10000
+            }
+        ]
+    },
+
+    {
+        "entidad": "Banco Pacífico",  
+        "interes": 6, 
+        "plazosMaximo": 60, 
+        "montoMaximo": 50000, 
+        "montoMinimo": 400,
+        "tipoCredito": [
+            {
+                "creditoInfinite": 50000,
+                "creditoPlatinum": 20000,
+                "creditoGlod": 10000,
+                "creditoClassic": 8000
+            }
+        ]
+    }
+
+]

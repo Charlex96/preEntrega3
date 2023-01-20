@@ -1,30 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Fira+Sans+Condensed:wght@300&display=swap");
+
+
 h1{
     text-align: center;
 }
 .container1{
+    margin: auto;
     text-align: center;
+    width: 400px;
 }
 .container-title{
     margin: 20px;
 }
-.botton{
-    margin: 20px auto;
-    border: 1px solid blue;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 130px;
-    padding: 5px;
-    text-align: center;
-}
-.botton:hover{
-    background-color: blue;
-    color: white;
+
+.container-btn-continue{
+    display: flex;
 }
 
-#nombre{
-    margin: 20px;
+.botton{
+    margin: 20px auto;
+    border: 1px solid rgb(55, 129, 233);
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.btn_atras{
+    display: none;
+}
+.botton:active{
+    /* background-color: rgb(55, 129, 233); */
+    /* color: white; */
+    transform: scale(0.99);
+}
+
+.container-input p{
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.input{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: 1px solid rgba(96, 96, 96, 0.364);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#nombre, #ci, #celular-email, #monto{
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: none;
+}
+
+.container-bottones{
+    display: flex;
+}
+
+.botton-union{
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.botton-union p{
+    color: rgb(51, 65, 81);
+    text-align: center;
+}
+
+.btn1{
+    background-color: rgb(226, 235, 243);
+    border: 1px solid rgba(59, 83, 120, 0.364);
+    border-right: 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.btn2{
+    border: 1px solid rgba(59, 83, 120, 0.364);
+    border-left: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.d1{
+    width: 20px;
+    height: 20px;
 }
 
 .error{
     color: red;
 }
+
+ion-icon{
+    color: red;
+    font-size: 30px;
+    margin: 0 15px;
+    display: none;
+}
+
+.box{
+    width: 150px;
+    padding: 0 10px;
+    text-align: start;
+    border: 1px solid rgb(129, 140, 156);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+h4{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.box p{
+    width: auto;
+    font-size: 13px;
+    padding: 0;
+    margin: 1px;
+}
+
+.box:hover{
+    border: 2px solid rgb(55, 129, 233);
+}
+
+.container{
+    margin: 20px auto;
+    width: 700px;
+    display: flex; 
+    justify-content: space-evenly;
+    /* gap: 5px; */
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.article{
+    text-align: center;
+    display: none;
+}
+
+
+.article-detalle{
+    margin: auto;
+    text-align: center;
+    width: 400px;
+    display: none;
+}
+
